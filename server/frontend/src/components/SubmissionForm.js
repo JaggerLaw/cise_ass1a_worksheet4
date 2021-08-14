@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
+import {useForm} from "react-hook-form";
 
 const SubmissionForm = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit} = useForm();
   const [result, setResult] = useState("");
   const onSubmit = (data) => setResult(JSON.stringify(data));
 
